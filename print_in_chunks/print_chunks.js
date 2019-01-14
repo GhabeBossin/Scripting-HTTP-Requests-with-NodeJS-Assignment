@@ -10,7 +10,7 @@ function getAndPrintHTMLChunks () {
     response.setEncoding('utf8');
 
     response.on('data', function(data) {
-      console.log('Data chunk aquired: ' + data.length + '\n.');
+      console.log('Data chunk aquired: ' + data + '\n');
     });
 
     response.on('end', function() {
@@ -18,3 +18,4 @@ function getAndPrintHTMLChunks () {
     });
   });
 }
+getAndPrintHTMLChunks();
