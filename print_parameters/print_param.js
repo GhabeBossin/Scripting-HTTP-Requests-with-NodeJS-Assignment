@@ -3,7 +3,7 @@ var https = require('https');
 function getAndPrintHTML (options) {
 
   //WORKING
-  options = {
+  var options = {
     host: requestOptions.host,
     path: requestOptions.path
   };
@@ -28,4 +28,4 @@ var requestOptions = {
   path: '/http-examples/step2.html'
 };
 
-getAndPrintHTML();
+getAndPrintHTML(requestOptions);
