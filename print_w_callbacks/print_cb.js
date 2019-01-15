@@ -1,15 +1,12 @@
 var https = require('https');
 
-function getHTML (options, callback) {
+module.exports = function getHTML (options, callback) {
 
-  //var callback = callback;
-  /* Add your code here */
   options = {
     host: requestOptions.host,
     path: requestOptions.path
   };
 
-  //console.log("hello ", callback);
   https.get(options, function(response) {
     response.setEncoding('utf8');
     var html = '';
@@ -24,7 +21,7 @@ function getHTML (options, callback) {
     });
 
   });
-}
+};
 
 function printHTML (html) {
   console.log(html);
