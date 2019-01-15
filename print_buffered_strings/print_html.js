@@ -16,9 +16,9 @@ function getAndPrintHTML () {
       return;
     });
 
-    response.on('end', function(){
+    response.on('end', function() {
       console.log(body);
-    })
+    });
   });
 }
 getAndPrintHTML();
